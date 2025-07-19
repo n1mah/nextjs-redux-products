@@ -1,24 +1,31 @@
-export const products = [
+import {ProductType} from "@/Types/product";
+
+export const products: ProductType[] = [
     {
         id: '1',
-        name: 'Basic T-Shirt',
-        description: 'A comfortable cotton t-shirt.',
-        price: 19.99,
+        name: 'T-Shirt',
+        description: 'Comfortable cotton t-shirt',
+        price: 20,
         image: '/images/tshirt.jpg',
-        options: {
-            sizes: ['S', 'M', 'L', 'XL'],
-            colors: ['Red', 'Blue', 'Black']
-        }
+        sizes: ['S', 'M', 'L'],
+        colors: ['Red', 'Blue', 'Green'],
     },
     {
         id: '2',
-        name: 'Shirt',
-        description: 'A .',
-        price: 20,
-        image: '/images/tshirt.jpg',
-        options: {
-            sizes: ['S', 'M'],
-            colors: ['Red', 'Blue']
-        }
-    }
+        name: 'Jeans',
+        description: 'Classic blue jeans',
+        price: 50,
+        image: '/images/jeans.jpg',
+        sizes: ['M', 'L'],
+        colors: ['Blue', 'Black'],
+    },
+    {
+        id: '3',
+        name: 'Hat',
+        description: 'Stylish hat for sunny days',
+        price: 15,
+        image: '/images/hat.jpg',
+        sizes: ['S', 'M'],
+        colors: ['Red', 'Black'],
+    },
 ]
